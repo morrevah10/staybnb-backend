@@ -1,85 +1,75 @@
-const dbService = require('../../services/db.service')
-const logger = require('../../services/logger.service')
-const ObjectId = require('mongodb').ObjectId
-const asyncLocalStorage = require('../../services/als.service')
+const dbService = require("../../services/db.service");
+const logger = require("../../services/logger.service");
+const ObjectId = require("mongodb").ObjectId;
+const asyncLocalStorage = require("../../services/als.service");
 
 async function query(filterBy = {}) {
-    try {
-        const filterCriteria =  _buildFilterCriteria(filterBy)
+  try {
+    const filterCriteria = _buildFilterCriteria(filterBy);
 
-        const collection = await dbService.getCollection('stay')
-        // console.log('collection', collection)
-        let stays = await collection.find(filterCriteria).toArray()
-        // let stays = await collection.find().toArray()
-        // console.log('stays', stays)
-        return stays
-      } catch (err) {
-        logger.error('cannot find stays', err)
-        throw err
-      }
-    }
+    const collection = await dbService.getCollection("stay");
+    let stays = await collection.find(filterCriteria).toArray();
+    return stays;
+  } catch (err) {
+    logger.error("cannot find stays", err);
+    throw err;
+  }
+}
 async function getById(id) {
-    try {
-        console.log('id', id)
-        const collection = await dbService.getCollection('stay')
-        // console.log('collection', collection)
-        let stay = await collection.findOne({"_id":ObjectId(id)})//FIXME: 
-        console.log('stay', stay)
-        // let stays = await collection.find().toArray()
-        // console.log('stays', stays)
-        return stay
-      } catch (err) {
-        logger.error('cannot find stay', err)
-        throw err
-      }
-    }
+  try {
+    const collection = await dbService.getCollection("stay");
+    let stay = await collection.findOne({ _id: ObjectId(id) }); //FIXME:
+    return stay;
+  } catch (err) {
+    logger.error("cannot find stay", err);
+    throw err;
+  }
+}
 
+//FIXME: delete after query is working
+// const stays = await collection.find(criteria).toArray()
+//     var stays = await collection.aggregate([
+//         {
+//             $match: criteria
+//         },
+//         {
+//             $lookup:
+//             {
+//                 localField: 'byUserId',
+//                 from: 'user',
+//                 foreignField: '_id',
+//                 as: 'byUser'
+//             }
+//         },
+//         {
+//             $unwind: '$byUser'
+//         },
+//         {
+//             $lookup:
+//             {
+//                 localField: 'aboutUserId',
+//                 from: 'user',
+//                 foreignField: '_id',
+//                 as: 'aboutUser'
+//             }
+//         },
+//         {
+//             $unwind: '$aboutUser'
+//         }
+//     ]).toArray()
+//     stays = stays.map(stay => {
+//         stay.byUser = { _id: stay.byUser._id, fullname: stay.byUser.fullname }
+//         stay.aboutUser = { _id: stay.aboutUser._id, fullname: stay.aboutUser.fullname }
+//         delete stay.byUserId
+//         delete stay.aboutUserId
+//         return stay
+//     })
 
-  
-    //FIXME: delete after query is working
-        // const stays = await collection.find(criteria).toArray()
-    //     var stays = await collection.aggregate([
-    //         {
-    //             $match: criteria
-    //         },
-    //         {
-    //             $lookup:
-    //             {
-    //                 localField: 'byUserId',
-    //                 from: 'user',
-    //                 foreignField: '_id',
-    //                 as: 'byUser'
-    //             }
-    //         },
-    //         {
-    //             $unwind: '$byUser'
-    //         },
-    //         {
-    //             $lookup:
-    //             {
-    //                 localField: 'aboutUserId',
-    //                 from: 'user',
-    //                 foreignField: '_id',
-    //                 as: 'aboutUser'
-    //             }
-    //         },
-    //         {
-    //             $unwind: '$aboutUser'
-    //         }
-    //     ]).toArray()
-    //     stays = stays.map(stay => {
-    //         stay.byUser = { _id: stay.byUser._id, fullname: stay.byUser.fullname }
-    //         stay.aboutUser = { _id: stay.aboutUser._id, fullname: stay.aboutUser.fullname }
-    //         delete stay.byUserId
-    //         delete stay.aboutUserId
-    //         return stay
-    //     })
-
-    //     return stays
-    // } catch (err) {
-    //     logger.error('cannot find stays', err)
-    //     throw err
-    // }
+//     return stays
+// } catch (err) {
+//     logger.error('cannot find stays', err)
+//     throw err
+// }
 
 // }
 
@@ -117,23 +107,21 @@ async function getById(id) {
 //     }
 // }
 
-
-function _buildFilterCriteria(filterBy = { destination: '', numOfBeds: 1, labels: ''}) {
-    const { destination, numOfBeds, labels } = filterBy
-    const criteria = {}
-    if (numOfBeds) {
-      criteria.capacity = { $gte: numOfBeds }
-    }
-    if (destination) {
-      criteria.address.city = { $regex: destination, $options: 'i' }
-    //   criteria.address.country = { $regex: destination, $options: 'i' }
-    }
-    // if (labels) criteria.labels = { $in: labels }
-    console.log('filterBy', filterBy)
-    console.log('criteria', criteria)
-    return criteria
+function _buildFilterCriteria(
+  filterBy = { destination: "", numOfBeds: 1, labels: "" }
+) {
+  const { destination, numOfBeds, labels } = filterBy;
+  const criteria = {};
+  if (numOfBeds) {
+    criteria.capacity = { $gte: numOfBeds };
   }
-  
+  if (destination) {
+    criteria.address.city = { $regex: destination, $options: "i" };
+    //   criteria.address.country = { $regex: destination, $options: 'i' }
+  }
+  // if (labels) criteria.labels = { $in: labels }
+  return criteria;
+}
 
 // function _buildCriteria(filterBy) {
 //     const criteria = {}
@@ -142,10 +130,8 @@ function _buildFilterCriteria(filterBy = { destination: '', numOfBeds: 1, labels
 // }
 
 module.exports = {
-    query,
-    getById
-    // remove, //TODO: uncomment
-    // add //TODO: uncomment
-}
-
-
+  query,
+  getById,
+  // remove, //TODO: uncomment
+  // add //TODO: uncomment
+};
