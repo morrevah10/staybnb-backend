@@ -9,6 +9,7 @@ async function query(filterBy = {}) {
 
     const collection = await dbService.getCollection("stay");
     let stays = await collection.find(filterCriteria).toArray();
+
     return stays;
   } catch (err) {
     logger.error("cannot find stays", err);
@@ -18,7 +19,7 @@ async function query(filterBy = {}) {
 async function getById(id) {
   try {
     const collection = await dbService.getCollection("stay");
-    let stay = await collection.findOne({ _id: ObjectId(id) }); //FIXME:
+    let stay = await collection.findOne({ _id: ObjectId(id) });
     return stay;
   } catch (err) {
     logger.error("cannot find stay", err);
@@ -26,52 +27,6 @@ async function getById(id) {
   }
 }
 
-//FIXME: delete after query is working
-// const stays = await collection.find(criteria).toArray()
-//     var stays = await collection.aggregate([
-//         {
-//             $match: criteria
-//         },
-//         {
-//             $lookup:
-//             {
-//                 localField: 'byUserId',
-//                 from: 'user',
-//                 foreignField: '_id',
-//                 as: 'byUser'
-//             }
-//         },
-//         {
-//             $unwind: '$byUser'
-//         },
-//         {
-//             $lookup:
-//             {
-//                 localField: 'aboutUserId',
-//                 from: 'user',
-//                 foreignField: '_id',
-//                 as: 'aboutUser'
-//             }
-//         },
-//         {
-//             $unwind: '$aboutUser'
-//         }
-//     ]).toArray()
-//     stays = stays.map(stay => {
-//         stay.byUser = { _id: stay.byUser._id, fullname: stay.byUser.fullname }
-//         stay.aboutUser = { _id: stay.aboutUser._id, fullname: stay.aboutUser.fullname }
-//         delete stay.byUserId
-//         delete stay.aboutUserId
-//         return stay
-//     })
-
-//     return stays
-// } catch (err) {
-//     logger.error('cannot find stays', err)
-//     throw err
-// }
-
-// }
 
 //TODO: Uncomment when remove is ready
 // async function remove(stayId) {
@@ -108,26 +63,23 @@ async function getById(id) {
 // }
 
 function _buildFilterCriteria(
-  filterBy = { destination: "", numOfBeds: 1, labels: "" }
+  filterBy = { destination: "", numOfGuests: 1, labels: "" }
 ) {
-  const { destination, numOfBeds, labels } = filterBy;
+  const { destination, numOfGuests, labels } = filterBy;
+  
   const criteria = {};
-  if (numOfBeds) {
-    criteria.capacity = { $gte: numOfBeds };
+  if (numOfGuests) {
+    criteria.capacity = { $gte: parseInt(numOfGuests)};
   }
   if (destination) {
-    criteria.address.city = { $regex: destination, $options: "i" };
-    //   criteria.address.country = { $regex: destination, $options: 'i' }
+    criteria['address.city'] = { $regex: destination , $options: "i" };
   }
+ 
   // if (labels) criteria.labels = { $in: labels }
   return criteria;
 }
 
-// function _buildCriteria(filterBy) {
-//     const criteria = {}
-//     if (filterBy.byUserId) criteria.byUserId = filterBy.byUserId
-//     return criteria
-// }
+
 
 module.exports = {
   query,
