@@ -10,6 +10,7 @@ const http = require("http").createServer(app);
 // Express App Config
 app.use(cookieParser());
 app.use(express.json());
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.resolve(__dirname, "public")));
 } else {
@@ -27,6 +28,8 @@ if (process.env.NODE_ENV === "production") {
   app.use(cors(corsOptions));
   dotenv.config();
 }
+
+// app.use(express.static('public')) //FIXME:
 
 // const authRoutes = require('./api/auth/auth.routes')
 // const userRoutes = require('./api/user/user.routes')
