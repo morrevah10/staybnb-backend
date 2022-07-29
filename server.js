@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
   dotenv.config();
 }
 
-app.use(express.static('public')) //FIXME:
+// app.use(express.static('public')) //FIXME:
 
 // const authRoutes = require('./api/auth/auth.routes')
 // const userRoutes = require('./api/user/user.routes')
