@@ -8,8 +8,8 @@ async function query(filterBy = {}) {
     console.log('hello hello', filterBy)
     const filterCriteria = _buildFilterCriteria(filterBy);
 
-    const collection = await dbService.getCollection("stay_test");
-    let stays = await collection.find(filterCriteria).limit(5).toArray();
+    const collection = await dbService.getCollection("stay");
+    let stays = await collection.find(filterCriteria).limit(30).toArray();
     console.log(stays)
     return stays;
   } catch (err) {
