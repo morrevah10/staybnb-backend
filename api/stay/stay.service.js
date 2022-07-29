@@ -9,7 +9,7 @@ async function query(filterBy = {}) {
     const filterCriteria = _buildFilterCriteria(filterBy);
 
     const collection = await dbService.getCollection("stay");
-    let stays = await collection.find(filterCriteria).toArray();
+    let stays = await collection.find(filterCriteria).limit(5).toArray();
     // console.log(stays[0].labels)
     return stays;
   } catch (err) {
