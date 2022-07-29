@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.resolve(__dirname, "public", "index.html")));
+  app.use(express.static(path.resolve(__dirname, "public")));
 } else {
   const corsOptions = {
     origin: [
@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
   dotenv.config();
 }
 
-// app.use(express.static('public')) //FIXME:
+app.use(express.static('public')) //FIXME:
 
 // const authRoutes = require('./api/auth/auth.routes')
 // const userRoutes = require('./api/user/user.routes')
@@ -57,3 +57,6 @@ const port = process.env.PORT || 3030;
 http.listen(port, () => {
   logger.info("Server is running on port: " + port);
 });
+
+
+
