@@ -5,11 +5,12 @@ const asyncLocalStorage = require("../../services/als.service");
 
 async function query(filterBy = {}) {
   try {
+    console.log('hello hello', filterBy)
     const filterCriteria = _buildFilterCriteria(filterBy);
 
     const collection = await dbService.getCollection("stay");
     let stays = await collection.find(filterCriteria).toArray();
-
+    // console.log(stays[0].labels)
     return stays;
   } catch (err) {
     logger.error("cannot find stays", err);
@@ -63,23 +64,42 @@ async function getById(id) {
 // }
 
 function _buildFilterCriteria(
-  filterBy = { destination: "", numOfGuests: 1, labels: "" }
+  filterBy = { destination: "", numOfGuests: 1, label: "" }
 ) {
-  const { destination, numOfGuests, labels } = filterBy;
-  
+  const { destination, numOfGuests, label} = filterBy;
+  // console.log('labels')
+  // console.log('building a criteria label',label)
   const criteria = {};
   if (numOfGuests) {
     criteria.capacity = { $gte: parseInt(numOfGuests)};
   }
+  if (label) {
+    criteria.labels = { $regex: label , $options: "i" };
+    // console.log('criteria', criteria)
+    return criteria
+  }
   if (destination) {
     criteria['address.city'] = { $regex: destination , $options: "i" };
   }
- 
   // if (labels) criteria.labels = { $in: labels }
   return criteria;
 }
 
-
+// {
+//   const { destination, numOfGuests, labels } = filterBy;
+//   const criteria = {};
+//   if (numOfGuests) {
+//     criteria.capacity = { $gte: parseInt(numOfGuests)};
+//   }
+//   if (labels.length) {
+//     criteria.labels = { $in: labels }
+//     return criteria
+//   }
+//   if (destination) {
+//     criteria['address.city'] = { $regex: destination , $options: "i" };
+//   }
+//   return criteria;
+// }
 
 module.exports = {
   query,

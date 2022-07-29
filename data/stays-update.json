@@ -1,6 +1,7 @@
 [
   {
     "name": "Westin Kaanapali KORVN 2BR",
+    "labels": ["pools", "beach", "island", "tropical","surfing"],
     "summary": "Westin Kaanapali Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
     "propertyType": "Serviced apartment",
     "houseRules": "No smoking; No Pets; This resort's rules apply. Please call the resort directly to verify details.",
@@ -195,6 +196,7 @@
   },
   {
     "name": "Belle chambre à côté Metro Papineau",
+    "labels":["shared homes", "iconic city"],
     "summary": "Chambre dans un bel appartement moderne avec balcon, ascenseur et terrasse. Private room in a beautiful modern apartment  with balcony, elevator and patio. La chambre est fermée avec une lit double. Vous aurez accès à une salle de bain avec une douche, terrasse. L'appartement est climatisé.  Votre chambre est équipé d'une connexion Wi-Fi illimité. Vous serez proche du centre ville, au pied du pont Jacques Cartier et à distance de marche de toutes les commodités (métro, supermarché, pharmacie",
     "propertyType": "Apartment",
     "houseRules": "",
@@ -297,6 +299,7 @@
   },
   {
     "name": "M&M Space MM2  Apartamento no centro da cidade",
+    "labels": ["iconic city", "beach"],
     "summary": "O apartamento fica perto de arte e cultura e dos mais belos monumentos da cidade. Belos jardins e paisagens da cidade e do rio Douro ficam perto e podem ser apreciadas.  Existem restaurantes típicos e de comida internacional ao redor do apartamento.   O espaço fica numa rua típica da cidade, cheia da sua magia e magnetismo e é muito pratico e confortável. O espaço é excelente para quem pretende visitar e conhecer a zona histórica e turística do Porto. Transportes públicos ficam próximos.",
     "propertyType": "Apartment",
     "houseRules": "- Devem respeitar o restantes hospedes a morar no prédio evitando barulhos excessivos. - Animais de estimação: Questionar o proprietário. Podem ser permitidos a um custo extra a acordar. e em casos excepcionais. Fumar: Podem fumar na varanda desde que cumpram as regras de segurança necessárias. - Ter cuidado com o manuseamento dos equipamentos existentes na casa. Dão-se informações se solicitado. - Levar o lixo utilizado para os contentores no exterior. São fornecidos sacos extra para o feito. - Ter uma boa estadia.",
@@ -578,6 +581,7 @@
   },
   {
     "name": "Fresh and modern 1BR in Bed-Stuy",
+    "labels":["iconic city"],
     "summary": "A spacious, art-filled one-bedroom apartment near the express train (28 minutes to Times Square) and a Citibike station. Sample Bed-Stuy life at a nearby French restaurant,  a sunny Haitian cafe, a boutique grocery and more. We do NOT discriminate based on race, religion or sexual orientation.",
     "propertyType": "Apartment",
     "houseRules": "A/C may be used only when you are at home.  Please respect our delicate old pipes (no grease down the drain, etc.).  No smoking on premises. Guests are expected to wash take out their trash and recycling as needed. Guests are expected to wash and put away dishes prior to check-out (apartment has a dishwasher, soap packets are under the sink) Longer term guests may wish to launder the sheets and towels during their stay. This service is not provided. (There are two sets of bed linens provided and two sets of towels for each adult guest.) Owners may occasionally need to go through the apartment to access the basement. We shall endeavor to give advance notice of this and find a mutually convenient time.  $50 fee if keys are lost or not returned.",
@@ -845,6 +849,7 @@
   },
   {
     "name": "Habitación centro de Barcelona",
+    "labels": ["iconic city", "beach"],
     "summary": "Mi piso está en el centro de Barcelona. Cerca del metro, las ramblas, los museos, el Portal del Ángel, Plaza Cataluña. Mi alojamiento es bueno para turistas, aventureros, y viajeros de negocios....y tiene ascensor.",
     "propertyType": "Apartment",
     "houseRules": "No hacer fiestas, no traer invitados a la habitación. Respetar el descanso de los vecinos. Mantener el orden y la limpieza de la casa. Recordar que alquilas una habitación, no un piso. Please: No smoking, no loud noise after 11pm, be courteous to neighbors and clean up after yourself when you use the kitchen and the bathroom. No guests.",
@@ -923,6 +928,7 @@
   },
   {
     "name": "DOUBLE ROOM IN THE HEART OF BCN",
+    "labels": ["iconic city", "beach"],
     "summary": "Lit room with balcony. The apartment is in the center, just meters from the Palau de la Musica Catalana. Well connected, a few minutes from Las Ramblas and the Born. Very close to the beach and Ciutadella Park",
     "propertyType": "Apartment",
     "houseRules": "-Mantener el espacio limpio y recogido. -No está permitido invitar a gente al apartamento. -Respetar el descanso de los vecinos. -No hacer ruido en la escalera. Apelo al sentido común de los inquilinos para una convivencia relajada y fluída. No hay normas en la casa más allá de las que dicte el sentido común.",
@@ -1188,6 +1194,7 @@
   },
   {
     "name": "Home, Sweet, Harlem. Welcome!",
+    "labels": ["iconic city", "creative space"],
     "summary": "Welcome! Upgrades Added as of January 2021 This listing is located in the Spanish Harlem Section of Manhattan. I offer a cozy apartment that has great transportation in and out the city! The area has a lot of ethnic restaurants and a lot of local, active residents. This residence is great for a quick, inexpensive stay in New York whether its for business, travel, or personal purposes. I am glad to welcome all guests!",
     "propertyType": "Apartment",
     "houseRules": "I take time and effort to maintain the household with the utmost cleanliness and hospitality. It is filled with the essentials needed to enjoy your stay.  I do ask to kindly respect the household as if it was yours. Please be courteous.",
@@ -1462,6 +1469,7 @@
   },
   {
     "name": "Heroísmo IV",
+    "labels": ["iconic city", "beach"],
     "summary": "If the dates you wish are not available, we have other options in the same location. You can find them on my profile. My goal is for you to have your days with the most comfort i can propose. I want you to taste all the feelings in Porto, as our food, as our best places, our best pointviews. I just love to help you enjoying this beautiful city :)",
     "propertyType": "Apartment",
     "houseRules": "I ask all the care with: - Noise from the 22 hours, especially when it comes to reach the apartment. - With decorative objects, furniture, bedding and bath, care in the handling of kitchen equipment. I am always available to answer any questions.",
@@ -1740,6 +1748,7 @@
   },
   {
     "name": "Monte dos Burgos - Cosy Room",
+    "labels": ["iconic city", "beach"],
     "summary": "The neighbourhood is a quiet, family residential area, 20 minutes by bus from the historic center of Porto and 20 minutes from the beach (Matosinhos - where you may eat very GOOD fish!). You will love to stay in a very spacious, familiar and bright room, where you can enjoy a large and flowery garden, comfortable kitchen and laundry with washer and dryer machine. My space is good for couples, solo adventures, and business travelers!",
     "propertyType": "House",
     "houseRules": "",
@@ -1856,6 +1865,7 @@
   },
   {
     "name": "Nice Cosy Room In Taksim",
+    "labels": ["iconic city", "shared homes"],
     "summary": "Welcome if you want to stay at a cozy flat with local experience.:) It is in the center of Istanbul.The neighborhood is safe and close to attractions.Transportation is easy. I will help you always.",
     "propertyType": "Apartment",
     "houseRules": "",
@@ -2114,6 +2124,7 @@
   },
   {
     "name": "Penthouse Sands of Kahana Sandy Swimmable Beach",
+    "labels": ["tropical", "island", "surfing", "pool"],
     "summary": "Price includes nightly rate & 14.42% tax.  Our fully remodeled 9th floor Penthouse unit offers the most amazing views.  The entire front of the condo is windows offering you a fantastic view of beautiful Pacific Ocean, Molokai & Lana'i.  Perfect location for watching beautiful sunsets, see our resident sea turtles & an excellent place for spotting whales during the whale migration season. This spacious two level 3 bedroom and 3 full bath Penthouse unit has over 2,050 sq ft of living space w/ AC.",
     "propertyType": "Condominium",
     "houseRules": "Resort fee of $75 collected by front desk at time of check in.  One time fee. - Rates are for 6 guests.  An additional $25 per night per person for up to 2 more guests. - Resort Quiet Hours 10:00 p.m. - 8:00 a.m. - No smoking on the lanai or in unit per Hawaii state law",
@@ -2390,6 +2401,7 @@
   },
   {
     "name": "+Spacious Studio&Kitchenette near Blue Mosque+",
+    "labels": ["iconic city"],
     "summary": "A spacious, private studio with high speed Wi-Fi wireless internet. It is located in historical district of Sultanahmet oldcity center. It's Only 10 minutes (by walking) away from Sultanahmet  Blue Mosque, Hagia Sophia, Topkapı Palace, Underground Cistern and Hippodrome. This area is called Kadirga and it's famous with it's local restaurants. There are more gorcery stores and supermarkets in this are since it's not %100 touristic area. There is children playground right in front of the building.",
     "propertyType": "Apartment",
     "houseRules": "",
@@ -2655,6 +2667,7 @@
   },
   {
     "name": "Grand apartment Sagrada Familia",
+    "labels": ["iconic city", "beach"],
     "summary": "4 rooms apartment in the heart of the right “Eixample” broadening. Perfect location in the notorious area of Sagrada Familia that will ensure and unforgettable stay in Barcelona. HUTB-003275",
     "propertyType": "Apartment",
     "houseRules": "Check-in: from 14:00 pm.  Check-out: till 11:00 am. Charges for electricity, gas, water and community included. Any noises that could disturb the neighbors is not allowed. Certainly from the 22: 00h.  Smoking in the apartment is not allowed. Any parties are strictly prohibited.",
@@ -2922,6 +2935,7 @@
   },
   {
     "name": "Spacious and quiet duplex apartment in Poble Sec",
+    "labels": ["iconic city", "beach"],
     "summary": "Spacious apartment in a peculiar building in the central neighbourhood of Poble Sec, with patio and terrace, ideal for families with children or groups. Walking distance from center, Montjuïc, Plaza España, Fira Montjuïc/Gran Vía, Sant Antoni, Raval.",
     "propertyType": "Apartment",
     "houseRules": "RIGHT AFTER RESERVATION: 1. Send us your e-mail address so that we can send you a PDF file with all the info. 2. Send us by e-mail the following personal data FOR ALL GUESTS (children included), for the compulsory tourist registration with the local authorities: ID number*  Type of document (national ID or passport)* Date of issue (if visible)* Family name*  First name*   M/F* Birth date*  Nationality*  Date of arrival* Personal address  Phone number  Expected days of stay BEFORE YOUR ARRIVAL: 1. Make sure you provide us your arrival's details (time of arrival and mean of transportation) and a phone number so that we can contact you in case of need. 2. Let us know your preferences regarding the beds according to your group's composition: ex. if you are a family of 2 parents + 2 kids we will prepare the main room and the bulk beds; if you are 2 couples we will prepare the main room and the other double bed room; if there is a child we will prepare the baby bed or the little bed, etc.  3",
@@ -3221,6 +3235,7 @@
   },
   {
     "name": "*CoZy Private Williamsburg Home*",
+    "labels": ["iconic city", "creative space"],
     "summary": "*NO PARTIES OR EVENTS* **Minutes From MANHATTAN / NYC BY TRAIN* 1 BLOCK FROM GRAND ST. First Floor Newly Renovated And Furnished Williamsburg Apartment Duplex  Back yard access. Wood Floors. Wifi. Marble & Granite Bathroom. *NEW-CLEAN* *BAKYARD PATIO* *CABLE TV*",
     "propertyType": "Apartment",
     "houseRules": "NO SMOKING INSIDE NO DISRESPECTING HOUSE SPACE.",
@@ -3492,6 +3507,7 @@
   },
   {
     "name": "Newly and comfortable apt",
+    "labels": ["iconic city", "creative space"],
     "summary": "The comfortable apartment at the heart of busy Tsim Sha Tsui.2minutes walk to the MTR/Subway station.There are many biggest shopping mall around here:K-11,The One,Harbour city ect.",
     "propertyType": "Condominium",
     "houseRules": "",
@@ -3754,6 +3770,7 @@
   },
   {
     "name": "302 Kanai A Nalu Ocean front/view",
+    "labels": ["pools", "beach", "island", "tropical","surfing"],
     "summary": "Welcome to Kana'i A Nalu a quiet resort that sits on the ocean away from the road. This property has the BEST ocean front views of Molokini Crater and Kaho'Olawe Island. There is a resort swimming pool and BBQs next to the ocean. This gorgeous 2 bed 2 bath unit is on the third floor look over the Pacific Ocean with views of Sugar Beach and Mount Haleakalea!  The condo is light and bright with all the creature comforts of home.  The beds are very comfortable.",
     "propertyType": "Condominium",
     "houseRules": "MVFA LLC dba Maui Vision Rentals (Agent) Cancellation, Deposit & Booking Policies Rental Rules: Guest agrees to abide by the Rental Rules.  Guest shall cause all members of the rental party and anyone else Guest permits on the property to abide by the following rules at all times while at the property including rules posted at the condominium complex.  By accepting this reservation and paying for the rental, guest enters the condo agreeing to all terms and conditions of this agreement and accepts responsibility for all guests of the property. Guest shall not permit any use of the pool by unsupervised children.  An adult Guest must accompany children and be present at all times. Guest and other invitees shall use the pool at their own risk.  Please respect the posted rules. Mandatory Occupancy Disclosures: You must disclose to us the exact number and names of guests (subject to maximum) who will be occupying the Property during the rental term.  You must immediately notify us, by phone ",
@@ -3923,6 +3940,7 @@
   },
   {
     "name": "Spacious, Sunny Room in Park Slope",
+    "labels": ["iconic city", "shared homes"],
     "summary": "Spacious, sunny room in owner occupied house in the heart of Park Slope. Shared  bathroom with shower/bath tub. Steps away from restaurants/bars and shopping. Within walking distance of major subway lines, Prospect Park, BAM and Barclay Center.",
     "propertyType": "House",
     "houseRules": "",
@@ -3994,6 +4012,7 @@
   },
   {
     "name": "Apartamento en casco antiguo",
+    "labels": ["iconic city", "beach"],
     "summary": "Apartamento en el centro del casco antiguo de Barcelona, a 50 mts del mar, a 1 minuto de Las Ramblas, Borne, Plaza Real y Barceloneta.",
     "propertyType": "Apartment",
     "houseRules": "- No hacer ruido a partir de la 10 pm. - La normativa del ayuntamiento de Barcelona obliga a formalizar contrato de alquiler - Contratación de limpieza obligatoria semanal de dos horas - Suministros (agua, luz y gas) se ha de pagar al anfitrión directamente y el coste es de     150€ mensuales - Pasadas las 22h se cobrara recargo de 35€ para hacer el check in",
@@ -4158,6 +4177,7 @@
   },
   {
     "name": "Elegant Flat in the Center",
+    "labels": ["iconic city"],
     "summary": "A part of a famous Poet Orhan Veli Kanık's poem: I am listening to Istanbul, intent, my eyes closed.  The Grand Bazaar is serene and cool,  A hubbub at the hub of the market,  Mosque yards are brimful of pigeons,  At the docks while hammers bang and clang  I am listening to Istanbul, intent, my eyes closed.  In the heart of Istanbul, and a step back from Bosphorus, our flat is ideal for a guest looking for to visit magical corners to listen epic Istanbul.",
     "propertyType": "Apartment",
     "houseRules": "Just treat as your home",
@@ -4692,6 +4712,7 @@
   },
   {
     "name": "Artsy 4BR in Plateau by Sonder",
+    "labels": ["iconic city", "creative space"],
     "summary": "At this Sonder, you'll love the bright and airy decor, expansive living area, and beautiful fully-equipped kitchen with modern appliances. Located in the Le Plateau, known for its assortment of delicious restaurants and relaxed cafes.",
     "propertyType": "Apartment",
     "houseRules": "House Rules 1. All bookings require a security deposit of $300 or more. You will not be charged for this in advance. 2. Guests can cancel within 24 hours of booking and receive a full refund, or cancel anytime up to seven days before the start of your trip and receive a 50% refund. Trips cancelled fewer than seven days in advance are not eligible for refunds. If you cancel within 24 hours of booking, please reach out to our team, as this refund has to be processed manually.   3. Check-in time is any time after 4 pm. Check-out time is any time before 11 am. You're welcome to request an early check in or late checkout, but this is not guaranteed and we can only confirm 24 hours in advance. 4. We do not allow smoking of any kind, including but not limited to nicotine, tobacco derived products and/or cannabis derived substances; breaking this rule will incur a $300 fine. 5. Most of our locations do not allow pets. 6. Generally, parties or excessive noise are not allowed in our locations. I",
@@ -4971,6 +4992,7 @@
   },
   {
     "name": "2 bedroom Upper east side",
+    "labels": ["iconic city", "shared homes"],
     "summary": "Near 70th and 1st.  A very nice 6th floor walk-up with true 2 bedrooms and one bath. Full Kitchen. One bedroom has a queen and the other a double.  Living room has a couch you could sleep on too. New powerful air conditioner cools whole apt. Great area with restaurants, shopping and walk to Central Park Please contact us first if reserving on same day, we might need time to arrange for keys. Holiday weekends we prefer 3 night stays. Thank you!",
     "propertyType": "Apartment",
     "houseRules": "",
@@ -5124,6 +5146,7 @@
   },
   {
     "name": "1 Stop fr. Manhattan! Private Suite,Landmark Block",
+    "labels": ["iconic city", "shared homes"],
     "summary": "Private room, dedicated bath and a separate entrance. Totally renovated Queen Anne Historic Townhouse Home on a safe, Landmark Block. Only one stop from Midtown Manhattan! Enjoy the rear private Garden at breakfast time. Beautiful tree lined,quiet street. 4 subway lines ( E, M, 7 and G ) are one block away! Great restaurants, supermarket and cafes nearby.",
     "propertyType": "Townhouse",
     "houseRules": "No smoking inside. No outside guests.   No cooking. Appreciate taking off street shoes inside room. We have an old dog, so no pets please.",
@@ -5394,6 +5417,7 @@
   },
   {
     "name": "Two bedroom apartment",
+    "labels": ["iconic city", "beach"],
     "summary": "Cozy apartment with wooden floors, two bedrooms, one with double bed, the second with two single beds, two bathrooms and equipped kitchen.",
     "propertyType": "Apartment",
     "houseRules": "- Horas de silencio a partir de las 22:00h  - Tasa turística no incluida en el precio (2,47€ persona/noche) - Solicitud de fianza de 200€ a la llegada. - Productos de minibar disponible por un precio adicional NO incluido en el precio de la reserva.",
@@ -5665,6 +5689,7 @@
   },
   {
     "name": "Sunny and quiet room with private shower room",
+    "labels": ["iconic city", "shared homes"],
     "summary": "Very quite and sunny room with private shower room My place is in Poble Sec, one of the most charming neighborhood in Barcelona. Located in the shadow of Montjuic's hill,the biggest and most beautiful parc in the city Just 2min far from  metro station and 15min from the airport bus stop Poble Sec is sizzling with open air bars and  quite streets ,pretty squares and friendly locals make it worthy The flat is in the 5th FLOOR NO LIFT  There's a lovely fat cat living",
     "propertyType": "Apartment",
     "houseRules": "1. Please tidy up after yourself. 2. Be respectful of the other residents in the building and keep the noise down after 11.30pm.  3. No smoking in the room and living room. It 's allow in the balcony",
@@ -5937,6 +5962,7 @@
   },
   {
     "name": "Inner City Terrace - 2 rooms 2 beds - 4 ppl.",
+    "labels": ["iconic city", "beach"],
     "summary": "Our home is located in Darlington, a small niche suburb of Sydney with a relaxed, friendly and safe atmosphere. We are located a 10 min walk to Broadway, Glebe, Newtown, The University, surrounded by fantastic restaurants, cafes, pubs, markets and public transport. It is a 20 min walk to the city centre.",
     "propertyType": "Townhouse",
     "houseRules": "We enjoy sharing our home with you and other Airbnb guests, please be considerate, enjoy the house, treat it with respect and apply some common sense! We are relaxed and easy going, we do not have rules or a curfew, however from our hosting experience we have generated some simple guidelines; •\tPlease ensure the house is locked for everyone's safety and security when you leave.  •\tIf you cook or use things in the kitchen place it in the dishwasher, and if you make a mess please clean it up. •\tPlease be considerate when using the bathroom, and be thoughtful for the next person to use it.  •\tPlease hang wet towels behind the door or on the rack provided. •\tWe enjoy cooking and are happy to share what we have in the fridge or pantry, but please do not freeload, for longer stays please be thoughtful by replacing or buying your own products. •\tWe appreciate that people enjoy their own space, may be tired after a long day or have limited/basic English. This is our home, please be courteous t",
@@ -6301,6 +6327,7 @@
   },
   {
     "name": "Cozy and modern Lapa-studio",
+    "labels": ["iconic city", "beach", "tropical"],
     "summary": "Studio in modernized building with games room, gym, computer room, ballroom and rooftop pool. The studio with modern, cheerful decor, with light vintage feel is divided into bedroom and living room with kitchen.",
     "propertyType": "Apartment",
     "houseRules": "Cinco passos para ser um ótimo hóspede e ganhar uma excelente avaliação! : 1) Não é permitido a entrada de pessoas que não estejam registradas.  2) Não é permitido barulho,  respeite as regras do condomínio.  3) Não é permitido a presença de animais.  4) If you break glasses and/or plates, you replace it, please..... 5) Não é permitido fumar dentro do apartamento, nem mesmo na janela, ótima oportunidade para ficar ao ar livre! 6) Não deixe as luzes acessas, nem o ar condicionado ligado ao sair. O ambiente e eu agradecemos! 7) Não leve as toalhas de banho para a praia, se ficarem manchadas com protetor solar terei que solicitar a sua reposição. All over, please leave it in a shape you would like to find!",
@@ -6591,6 +6618,7 @@
   },
   {
     "name": "Double room with private bathroom",
+    "labels": ["iconic city", "beach"],
     "summary": "Double room on the second floor of a new constructed duplex of modern design. There are a wardrobe, a small table and its own air conditioner that could be used  for winter as well as for summer. Large family size bed of 135 x 190 cm. Inside the apartment you could freely use large kitchen with dining table and a lot of modern kitchen devices. Itºs located in a quiet neighborhood just in  15 min by train or metro (the train or metro station are just in 5 min by foot from apartment).",
     "propertyType": "Apartment",
     "houseRules": "El viajero tiene que ser respetuoso con mi descanso. No se puede traer a ningún amigo a mi casa. No se puede fumar dentro del piso. No se admiten hombres que viajen solos, solamente se admiten parejas y mujeres solas. Se ruega silencio pasadas las 00:00 h.",
@@ -6780,6 +6808,7 @@
   },
   {
     "name": "Quarto Taquara - Jacarepaguá",
+    "labels": ["iconic city", "tropical", "shared homes"],
     "summary": "Quarto exclusivo com armário e sofá cama de casal, possui ainda um colchão de casal. Apartamento localizado próximo a estação do BRT - Aracy Cabral - Bairro da Taquara - Jacarepaguá de fácil acesso aos bairros da Barra da Tijuca, Recreio, etc.",
     "propertyType": "Apartment",
     "houseRules": "Eu resido no apartamento, portanto, por favor tenham cuidado.",
@@ -6852,6 +6881,7 @@
   },
   {
     "name": "18C.  NICE AND COZY 2 BEDROOMS. PERFECT LOCATION!",
+    "labels": ["iconic city", "creative space"],
     "summary": "NICE AND COZY APARTMENT WITH 2 BEDROOMS ON A TOP FLOOR. LOCATED ON ST-LAURENT BOULEVARD. WALKING DISTANCE TO MANY GOOD RESTAURANTS, BARS, SHOPPING AND OTHER SERVICES.",
     "propertyType": "Apartment",
     "houseRules": "#1 - Enjoy your stay and make every moment count! -  Check-in is at 3 pm local time. If the apartment is ready earlier, I’ll let you know. Check-out is at 11AM, but I’d be happy to extend it as long as I don’t have a cleaning scheduled. Just ask:) - Please be respectful - No smoking inside the apartment, you will find a can with sand on the balcony.  - Please remove your shoes when you get in the house. - No loud parties or excessive noise, we don't want to have problems with the neighbours.  - Please do not leave dirty dishes in the sink to add to the normal cleaning of the apartment. There's a dishwasher and also you will find little pack of dishwasher detergent under the sink! - Extra will be charged for any damage, excessive cleaning or unauthorized late check-out.   - Don't forget rule #1. Thank you in advance!",
@@ -7123,6 +7153,7 @@
   },
   {
     "name": "Ipanema: moderno apê 2BR + garagem",
+    "labels": ["beach", "tropical","surfing"],
     "summary": "Moderno apartamento de 2 quartos com garagem em bucólica rua de Ipanema, a poucos metros da Lagoa Rodrigo de Freitas.",
     "propertyType": "Apartment",
     "houseRules": "* Não é permitido realizar festas e ou outros eventos no apartamento. * Ambiente familiar. Por favor, respeite os vizinhos e as horas de silêncio entre 22h e 10h.  * Desculpe, nós não aceitamos animais, domésticos e de pequeno porte; * Visitas não são permitidas sem identificação. A identificação consiste em enviar o documento com a fotografia às anfitriãs e ao porteiro;  * Os visitantes que pernoitarem serão contados como hóspedes adicionais e deve pagar o valor correspondente: + R $ 50 / pessoa / dia;  * Não é permitido o uso de drogas ilícitas. Por favor, evite constrangimentos e problemas com a polícia. * Por favor, retire o lixo e lave sua louça antes de sair;  * O lixo deve ser descartado de forma separada para reciclagem, em lixeiras localizadas na garagem do edifício; * Por favor, cuide do espaço com amor e respeito.",
@@ -7396,6 +7427,7 @@
   },
   {
     "name": "Oceanfront & Breath Taking Views.",
+    "labels": ["pools", "beach", "island", "tropical","surfing"],
     "summary": "A spectacular oceanfront ground level condo. 10 feet away from the ocean.  Enjoy an unobstructed 180% Amazing Ocean Views, of Molokai & Lanai Islands with awesome sunsets & whale watching in season while sipping your favorite wine from your living room or lanai. Explore & swim  2 reefs just outside your lanai. You have got it all from this renovated private unit. Your backyard is the ocean. In walking distance to town, children friendly, protected by 2 reefs. FREE parking 12 steps to front door.",
     "propertyType": "Townhouse",
     "houseRules": "Payments in US $ dollars only. We follow Hawaii local & state tax rules. STATE and CITY taxes will be added to ALL reservation rates. Each reservation requires a cleaning fee & linen for all stays...Guests will receive & sign  a rental agreement.",
@@ -7705,6 +7737,7 @@
   },
   {
     "name": "East Village Sanctuary",
+    "labels": ["iconic city"],
     "summary": "Walking distance to NYU. Large one bedroom with full kitchen and living room. In the hustle and bustle of the east village night, hide away in this green oasis to recharge and reset. Right next to the L, 4, 5, 6, N,R, W and F lines this apartment is the perfect central location for anywhere you want to go in NYC as well as just walking a block or two for a cheap amazing meal.",
     "propertyType": "Apartment",
     "houseRules": "Please no shoes when you are in the apartment. the floors scuff easily and after all it is NYC.  Also, please take trash out when you leave and place towels on hooks to the left of the closet.",
