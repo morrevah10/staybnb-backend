@@ -10,7 +10,7 @@ async function query(filterBy = {}) {
 
     const collection = await dbService.getCollection("stay_test");
     let stays = await collection.find(filterCriteria).limit(5).toArray();
-    // console.log(stays[0].labels)
+    console.log(stays)
     return stays;
   } catch (err) {
     logger.error("cannot find stays", err);
