@@ -8,7 +8,7 @@ async function query(filterBy = {}) {
     console.log('hello hello', filterBy)
     const filterCriteria = _buildFilterCriteria(filterBy);
 
-    const collection = await dbService.getCollection("stay");
+    const collection = await dbService.getCollection("stay_test");
     let stays = await collection.find(filterCriteria).limit(5).toArray();
     // console.log(stays[0].labels)
     return stays;
