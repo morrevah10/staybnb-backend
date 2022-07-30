@@ -10,7 +10,6 @@ async function query(filterBy = {}) {
 
     const collection = await dbService.getCollection("stay");
     let stays = await collection.find(filterCriteria).limit(30).toArray();
-    console.log(stays)
     return stays;
   } catch (err) {
     logger.error("cannot find stays", err);
@@ -67,39 +66,25 @@ function _buildFilterCriteria(
   filterBy = { destination: "", numOfGuests: 1, label: "" }
 ) {
   const { destination, numOfGuests, label} = filterBy;
-  // console.log('labels')
-  // console.log('building a criteria label',label)
+
   const criteria = {};
   if (numOfGuests) {
     criteria.capacity = { $gte: parseInt(numOfGuests)};
   }
   if (label) {
     criteria.labels = { $regex: label , $options: "i" };
-    // console.log('criteria', criteria)
+
     return criteria
   }
   if (destination) {
-    criteria['address.city'] = { $regex: destination , $options: "i" };
+    criteria.$or =  []  
+    criteria.$or.push({'address.country': { $regex: destination , $options: "i" } }) 
+    criteria.$or.push({'address.city': { $regex: destination , $options: "i" } }) 
   }
-  // if (labels) criteria.labels = { $in: labels }
   return criteria;
 }
 
-// {
-//   const { destination, numOfGuests, labels } = filterBy;
-//   const criteria = {};
-//   if (numOfGuests) {
-//     criteria.capacity = { $gte: parseInt(numOfGuests)};
-//   }
-//   if (labels.length) {
-//     criteria.labels = { $in: labels }
-//     return criteria
-//   }
-//   if (destination) {
-//     criteria['address.city'] = { $regex: destination , $options: "i" };
-//   }
-//   return criteria;
-// }
+
 
 module.exports = {
   query,

@@ -32,17 +32,13 @@ if (process.env.NODE_ENV === "production") {
   dotenv.config()
 }
 
-<<<<<<< HEAD
 app.use(express.static('public')) 
 
-// const authRoutes = require('./api/auth/auth.routes')
-// const userRoutes = require('./api/user/user.routes')
+
 const stayRoutes = require("./api/stay/stay.routes");
-=======
 const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')
-const stayRoutes = require("./api/stay/stay.routes")
->>>>>>> e2b790f4c5bcffd31f075542c1a325507b65d3c1
+
 // const {setupSocketAPI} = require('./services/socket.service')
 
 // routes
@@ -64,13 +60,8 @@ app.get("/**", (req, res) => {
 const logger = require("./services/logger.service")
 const port = process.env.PORT || 3030
 http.listen(port, () => {
-<<<<<<< HEAD
   logger.info("Server is running on port: " + port);
 });
 
 
 
-=======
-  logger.info("Server is running on port: " + port)
-})
->>>>>>> e2b790f4c5bcffd31f075542c1a325507b65d3c1
