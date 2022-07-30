@@ -20,6 +20,9 @@
         "mongodb": "^3.2.7",
         "socket.io": "^4.2.0"
     },
+    "engines": {
+     "node": "18.7.0 "
+      },
     "devDependencies": {
         "nodemon": "1.18.10"
     }
