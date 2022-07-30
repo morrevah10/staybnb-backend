@@ -30,28 +30,42 @@ async function query(filterBy = {}) {
     throw err
   }
 }
-
 async function getById(userId) {
   try {
     const collection = await dbService.getCollection("user")
     const user = await collection.findOne({ _id: ObjectId(userId) })
     delete user.password
-
+    
     user.givenStays = await stayService.query({ byUserId: ObjectId(user._id) })
     user.givenStays = user.givenStays.map((stay) => {
       delete stay.byUser
       return stay
     })
-
+    
     return user
   } catch (err) {
     logger.error(`while finding user by id: ${userId}`, err)
     throw err
   }
 }
+async function update(user) {
+  try {
+    // peek only updatable properties
+    const userToSave = {
+      _id: ObjectId(user._id), // needed for the returnd obj
+      trips:user.trips,
+    }
+    const collection = await dbService.getCollection("user")
+    await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
+    return userToSave
+  } catch (err) {
+    logger.error(`cannot update user ${user._id}`, err)
+    throw err
+  }
+}
 async function getByUsername(userName) {
-    try {
-        const collection = await dbService.getCollection("user")
+      try {
+            const collection = await dbService.getCollection("user")
 
         const user = await collection.findOne({ userName })
     return user
@@ -71,22 +85,6 @@ async function remove(userId) {
   }
 }
 
-async function update(user) {
-  try {
-    // peek only updatable properties
-    const userToSave = {
-      _id: ObjectId(user._id), // needed for the returnd obj
-      fullname: user.fullname,
-      score: user.score,
-    }
-    const collection = await dbService.getCollection("user")
-    await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
-    return userToSave
-  } catch (err) {
-    logger.error(`cannot update user ${user._id}`, err)
-    throw err
-  }
-}
 
 async function add(user) {
   try {
@@ -94,9 +92,7 @@ async function add(user) {
     const userToAdd = {
       username: user.username,
       password: user.password,
-      fullname: user.fullname,
       imgUrl: user.imgUrl,
-      score: 100,
     }
     const collection = await dbService.getCollection("user")
     await collection.insertOne(userToAdd)
