@@ -7,14 +7,17 @@ async function query() {
     try {
         // const criteria = _buildCriteria(filterBy)
         const collection = await dbService.getCollection('order')
+        const order =await collection.find().toArray()
+        console.log(order)
         // const reviews = await collection.find(criteria).toArray()
-        return collection
+        return order
     } catch (err) {
         logger.error('cannot find orders', err)
         throw err
     }
 
 }
+
 
 
 async function add(order) {
