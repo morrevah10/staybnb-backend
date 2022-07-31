@@ -8,7 +8,7 @@ async function query() {
         // const criteria = _buildCriteria(filterBy)
         const collection = await dbService.getCollection('order')
         const order =await collection.find().toArray()
-        console.log(order)
+        // console.log(order)
         // const reviews = await collection.find(criteria).toArray()
         return order
     } catch (err) {
