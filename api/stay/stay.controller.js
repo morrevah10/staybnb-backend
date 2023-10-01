@@ -26,10 +26,17 @@ async function getById(req, res){
         res.status(500).send({ err: 'Failed to get the stay'})
     }
 }
+
+module.exports = {
+    getStays,
+    getById
+    // deleteStay,
+    // addStay
+}
 // async function deleteStay(req, res) {
-//     try {
-//         const deletedCount = await stayService.remove(req.params.id)
-//         if (deletedCount === 1) {
+    //     try {
+        //         const deletedCount = await stayService.remove(req.params.id)
+        //         if (deletedCount === 1) {
 //             res.send({ msg: 'Deleted successfully' })
 //         } else {
 //             res.status(400).send({ err: 'Cannot remove stay' })
@@ -79,10 +86,3 @@ async function getById(req, res){
 //         res.status(500).send({ err: 'Failed to add stay' })
 //     }
 // }
-
-module.exports = {
-    getStays,
-    getById
-    // deleteStay,
-    // addStay
-}
